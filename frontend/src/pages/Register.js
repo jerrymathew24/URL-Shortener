@@ -10,7 +10,7 @@ const Register = () => {
 
     const handleRegister = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/auth/register', {
+            const response = await axios.post('https://url-shortener-pdfd.onrender.com/auth/register', {
                 email,
                 password,
             });

@@ -18,7 +18,7 @@ const UrlShorten = ({ onShortUrlChange }) => {
             }
 
             const response = await axios.post(
-                'http://localhost:5000/url/shortUrls',
+                'https://url-shortener-pdfd.onrender.com/url/shortUrls',
                 { full },
                 { headers: { Authorization: token } }
             );

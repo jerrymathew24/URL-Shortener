@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const authRoutes = require('./routes/authRoutes.js');
+const urlRoutes = require('./routes/urlRoutes.js');
 
 dotenv.config();
 
@@ -26,6 +28,8 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 
+app.use('/auth', authRoutes);
+app.use('/url', urlRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

@@ -19,3 +19,5 @@ The backend is deployed on render.com
 The frontend is deployed on netlify.com
 
 I have used chatgpt for the development of this project.
+
+The site is live here- https://authenticated-url-shortener.netlify.app/

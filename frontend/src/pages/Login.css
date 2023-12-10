@@ -1,0 +1,49 @@
+/* Base styles for .login-container */
+.login-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+}
+
+.email {
+    padding: 10px;
+    margin: 5px;
+}
+
+.password {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    /* Styles for tablets */
+    .login-container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Styles for mobiles */
+    .login-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
